@@ -1,0 +1,19 @@
+.nav {
+    width: 100vw;
+    height: 74px;
+    background: $background-grey;
+    z-index: 10;
+  }
+  .top-nav {
+    padding: 0 20px;
+    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    height: 74px;
+    justify-content: space-between;
+    gap: 110px;
+    .top-nav-log {
+      width: 167px;
+      height: 42px;
+    }
+  }

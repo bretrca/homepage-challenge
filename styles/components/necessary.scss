@@ -1,0 +1,93 @@
+.necessary {
+  display: flex;
+  flex-direction: column;
+  width: 99vw;
+  height: 1465px;
+  padding: 64px 31px;
+  gap: 32px;
+  .necessary-intro {
+    width: 297px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .necessary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 296px;
+    height: 1065px;
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 296px;
+      height: 1010px;
+      gap: 12px;
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 16px 0px;
+        gap: 16px;
+        width: 296px;
+        height: 100%;
+
+        background: $background-grey;
+        background-image: url("../img/particles.png");
+        border-radius: 8px;
+        div {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 0px;
+          gap: 17px;
+          width: 264px;
+          height: 56px;
+          color: $base-dark-color;
+          .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            width: 42px;
+            height: 42px;
+            border-radius: 8px;
+            box-shadow: 0px 12px 16px -7px rgba(31, 7, 66, 0.2);
+          }
+          h3 {
+            font-size: 22px;
+            line-height: 28px;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+          }
+        }
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 500;
+        }
+        .detail {
+          width: 123px;
+          height: 22px;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 4px;
+          p {
+            width: 103px;
+            height: 22px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+
+            letter-spacing: 0.01em;
+            color: $text-secondary;
+          }
+        }
+      }
+    }
+  }
+}

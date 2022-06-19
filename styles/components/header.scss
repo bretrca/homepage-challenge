@@ -1,0 +1,42 @@
+.header {
+    background-color: $background-grey;
+    width: 100vw;
+    min-width: 360px;
+    height: 755px;
+    position: relative;
+  
+    .header-container {
+      @extend %component-flex-column;
+      .header-title {
+        @extend %component-flex-start;
+        margin-top: 52px;
+        width: 295px;
+        height: 331.37px;
+        margin-left: 34px;
+        margin-right: 31px;
+        justify-content: space-between;
+        gap: 24px;
+        h1 {
+          height: 160px;
+          font-size: 35px;
+          line-height: 32px;
+          font-weight: bold;
+          letter-spacing: -0.02em;
+          color: $text-neutral;
+        }
+        p {
+          letter-spacing: 0.02em;
+        }
+        img {
+          width: 203px;
+          height: 33.37px;
+        }
+      }
+      .key-visual {
+        margin-top: 21px;
+        margin-left: 34px;
+        height: 257px;
+        width: 295px;
+      }
+    }
+  }

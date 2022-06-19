@@ -1,0 +1,29 @@
+.dropdown {
+  position: fixed;
+  top: 661px;
+  background-color: $background-purple;
+  width: 100%;
+  height: 125px;
+  border-radius: 29.5px;
+  z-index: 1;
+  #challenge {
+    @extend %component-flex-row;
+    justify-content: space-between;
+    height: 24px;
+    width: 80%;
+    padding-top: 21px;
+    margin: 0 32px;
+
+    h3 {
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: $base-text-color;
+    }
+    img {
+      display: inline-block;
+      width: 15.76px;
+      height: 8.79px;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+%container-father {
+  width: 100vw;
+  min-width: 360px;
+  padding-top: 64px;
+}
+%component-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+%component-flex-start {
+  @extend %component-flex-column;
+  align-items: flex-start;
+}
+
+%container-child {
+  @extend %component-flex-start;
+  margin: 0 32px;
+}
+
+%component-flex-align {
+  display: flex;
+  align-items: center;
+}
+%component-flex-center {
+  @extend %component-flex-align;
+  flex-direction: column;
+}
+%component-flex-between {
+  @extend %component-flex-column;
+  justify-content: space-between;
+}
+%component-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%scroll {
+  width: 4px;
+  height: 4px;
+  background: $background-purple;
+  border-radius: 4px;
+}
+%selected {
+  width: 16px;
+  height: 16px;
+  background: $background-purple;
+  border-radius: 16px;
+  @extend %component-flex-align;
+  justify-content: center;
+  align-content: center;
+  opacity: 0.7;
+  .scroll {
+    background: $base-text-color;
+  }
+}
+%button-link {
+  @extend %component-flex-row;
+  width: 244px;
+  height: 47px;
+  border-radius: 27.5px;
+  background: $background-purple;
+  color: $base-text-color;
+  font-size: 14px;
+  line-height: 24px;
+  border: none;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+%not-selected {
+  font-weight: bold;
+  color: $background-purple;
+}
+%center-desktop-xl {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}

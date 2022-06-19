@@ -1,0 +1,27 @@
+.work-with {
+  @extend %container-father;
+  height: 698px;
+  background: $background-grey;
+  .work-with-container {
+    @extend %container-child;
+    width: 296px;
+    height: 586px;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 32px;
+  }
+  b {
+    color: $text-neutral-gray;
+  }
+
+  .work-with-discover {
+    @extend %component-flex-align;
+    width: 234px;
+    height: 31px;
+
+    gap: 8px;
+    p {
+      font-weight: 500;
+    }
+  }
+}

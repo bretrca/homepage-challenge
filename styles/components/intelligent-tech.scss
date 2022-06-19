@@ -1,0 +1,20 @@
+.intelligent-tech {
+    @extend %container-father;
+    background-color: $background-green;
+    height: 722px;
+    .intelligent-tech-container {
+      @extend %container-child;
+      align-items: flex-start;
+      gap: 32px;
+      .image-tech {
+        width: 296px;
+        height: 276.63px;
+      }
+      .intelligent-text {
+        @extend %component-flex-start;
+        gap: 24px;
+        width: 296px;
+        height: 241px;
+      }
+    }
+  }

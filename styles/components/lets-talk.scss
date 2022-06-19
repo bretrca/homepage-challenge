@@ -1,0 +1,48 @@
+.lets-talk {
+  @extend %container-father;
+  height: 488px;
+  background: url("../img/shutterstock_524965909.png");
+  background-color: $background-secondary;
+  color: $base-text-color;
+  .lets-talk-container {
+    @extend %container-child;
+    width: 296px;
+    height: 376px;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    .lets-talk-more {
+      width: 267px;
+      height: 173px;
+      @extend %component-flex-center;
+      gap: 40px;
+      text-align: center;
+      div {
+        letter-spacing: 0.02em;
+        @extend %component-flex-center;
+        gap: 16px;
+      }
+      h2 {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 32px;
+      }
+      .button-link {
+        @extend %button-link;
+      }
+    }
+    .lets-talk-email {
+      @extend %component-flex-center;
+      height: 92px;
+      width: 296px;
+      text-align: center;
+      gap: 8px;
+      p {
+        letter-spacing: 0.01em;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+      }
+    }
+  }
+}

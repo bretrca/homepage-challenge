@@ -1,0 +1,114 @@
+.hidden {
+  display: none;
+}
+.show {
+  @extend %component-flex-between;
+  z-index: 30;
+  margin: 0;
+  padding-top: 18px;
+  background: $text-neutral;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  .desktop-container-image {
+    @extend %component-flex-between;
+    height: 74px;
+    width: 320px;
+    margin: 9px 20px;
+    .toggle {
+      @extend %component-flex-between;
+      width: 320px;
+      align-items: center;
+      padding: 0px;
+    }
+  }
+  .menu {
+    @extend %component-flex-start;
+    width: 297px;
+    height: 456px;
+    gap: 24px;
+    margin-left: 34px;
+    ul {
+      @extend %component-flex-start;
+      height: 385px;
+      width: 297px;
+      list-style: none;
+      position: relative;
+      justify-content: space-around;
+      li {
+        width: 297px;
+        margin: 0px;
+        display: inline-block;
+        height: 52px;
+        div {
+          p {
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+          }
+          a {
+            display: block;
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        a {
+          div {
+            p {
+              font-size: 11px;
+              line-height: 14px;
+              font-weight: 400;
+            }
+            h2 {
+              font-size: 22px;
+              line-height: 32px;
+            }
+          }
+        }
+      }
+
+      li:hover {
+        background: $text-secondary;
+      }
+    }
+    .button-link {
+      @extend %button-link;
+    }
+    .menu-item {
+      @extend %component-flex-row;
+      width: 90vw;
+      gap: 30%;
+      padding-top: 18px;
+      height: 74px;
+      .toggle {
+        width: 22px;
+      }
+      .mobile {
+        width: 167px;
+      }
+      .toggle:hover,
+      .mobile:hover {
+        background-color: $text-neutral;
+      }
+      .top-nav-logo {
+        width: 167px;
+        height: 42px;
+      }
+    }
+  }
+  .menu-contact {
+    margin: 0 34px;
+    color: #fff;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}

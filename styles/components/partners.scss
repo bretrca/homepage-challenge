@@ -1,0 +1,36 @@
+.partners {
+    @extend %container-father;
+    height: 590px;
+    .partners-container {
+      width: 296px;
+      height: 478px;
+      @extend %container-child;
+      gap: 32px;
+      .partners-text {
+        width: 296px;
+        height: 430px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        h2 {
+          font-weight: bold;
+        }
+      }
+      .partners-scroll-container {
+        @extend %component-flex-row;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        height: 16px;
+        width: 26px;
+        padding-top: 16px;
+        .scroll {
+          @extend %scroll;
+        }
+        .selected {
+          @extend %selected;
+        }
+      }
+    }
+  }

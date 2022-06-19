@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>HABITANT - Innovation</title>
+  </head>
+  <body>
+  <div class="nav">
+    <div class="top-nav" role="navigation">
+      <img
+        class="top-nav-logo"
+        src="../img/Logo_Color_Small.svg"
+        alt="logo"
+      />
+      <img
+        onclick="dropdownEffect()"
+        class="mobile-lg"
+        src="../img/Vector.svg"
+        alt="menu"
+      />
+      <div class="hidden desktop-lg" id="buttonDropdown">
+        <div class="menu">
+          <ul>
+            <div class="menu-item">
+              <li class="mobile">
+                <img
+                  class="top-nav-logo"
+                  src="../img/Logo_Color_white.png"
+                  alt="logo"
+                />
+              </li>
+              <li class="toggle" onclick="dropdownEffectClose()">
+                <img class="mobile-lg" src="../img/cross.png" alt="menu" />
+              </li>
+            </div>
+            <li>
+              <a href="#">
+                <div>
+                  <h2>Inicio</h2>
+                </div>
+              </a>
+            </li>
+            <li class="toggleable">
+              <a href="#">
+                <div>
+                  <h2>Nuestro modelo</h2>
+                  <p class="mobile">
+                    Descubre las ventajas de Global Sales Partnership
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="toggleable">
+              <a href="#">
+                <div>
+                  <h2>¿Cómo lo hacemos?</h2>
+                  <p class="mobile">
+                    Recursos y metodología adaptada a tus objetivos
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="toggleable">
+              <a href="#">
+                <div>
+                  <h2>Tecnologías</h2>
+                  <p class="mobile">Inteligencia de negocio a tu servicio</p>
+                </div>
+              </a>
+            </li>
+            <li class="toggleable">
+              <a href="#">
+                <div>
+                  <h2>Casos de éxito</h2>
+                  <p class="mobile">Así hemos ayudado a otras empresas</p>
+                </div>
+              </a>
+            </li>
+            <li class="toggleable">
+              <a href="#">
+                <div>
+                  <h2>¿Quiénes somos?</h2>
+                  <p class="mobile">
+                    HABITANT y Walmeric. La experiencia nos avala
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div>
+            <button class="button-link mobile">Contáctanos</button>
+          </div>
+        </div>
+        <div class="menu-contact mobile">
+          <p>¿Prefieres escribirnos directamente?</p>
+
+          <a href="mailtto:#">business@globalsalespartnership.com</a>
+        </div>
+        <div class="lang-dis">
+          <p>
+            <b class="mobile">ES</b>
+          </p>
+          <p class="not-selected">
+            ENG
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="header">
+      <div class="header-container">
+        <div class="header-title">
+          <h1>Tu partner para conseguir más leads, más ventas, más revenue</h1>
+          <p>
+            Un modelo de trabajo end to end que integra
+            <b>tecnología, medios y creatividad.</b>
+          </p>
+          <img src="../img/firma_powered_by.png" alt="signature" />
+        </div>
+        <div class="key-visual">
+          <img src="../img/Keyvisual_GSP 4.png" alt="visual_key" />
+        </div>
+      </div>
+    </div>
+    <div class="dropdown" onclick="handleOpen()">
+      <div id="challenge">
+        <h3>¿Tienes un reto?</h3>
+        <img src="../img/Layer 125.png" alt="arrow" />
+      </div>
+    </div>
+    <div id="drop-up" class="show-up">
+      <div class="show-contact-container">
+        <div class="header-drop">
+          <h2>¡Cuéntanos tu reto!</h2>
+          <img id="close-btn" class="drop-arrow" src="../img/Vector (12).png" alt="arrow" onclick="handleClose()" />
+        </div>
+        <form action="Post">
+          <div class="input-container">
+            <div>
+              <label for="fname">Nombre completo</label>
+              <input
+                class="form-control"
+                type="text"
+                id="name"
+                name="fname"
+                placeholder="Nombre completo"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div>
+              <label for="femail">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="femail"
+                placeholder="Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div>
+              <label for="fcompany">Empresa</label>
+              <input
+                type="text"
+                name="fcompany"
+                id="company"
+                placeholder="Empresa"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div>
+              <label for="fcompany-charge">Cargo en la empresa</label>
+              <input
+                type="text"
+                name="fcompany-charge"
+                id="company-charge"
+                placeholder="Cargo en la empresa"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div>
+              <div class="message">
+                <label for="fmessage">Mensaje</label>
+                <input
+                  type="text"
+                  name="fmessage"
+                  id="message"
+                  placeholder="Mensaje"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="text-field">
+            <p>*Este campo es obligatorio</p>
+          </div>
+          <div class="text-field">
+            <input type="checkbox" />
+            <p>
+              Acepto que me envíen comunicaciones por parte de Global Sales
+              Partnership*
+            </p>
+          </div>
+          <div class="text-field">
+            <input type="checkbox" required />
+            <p>He leído y acepto la política de privacidad*</p>
+          </div>
+
+          <button onsubmit="">
+            Enviar <img src="../img/Layer 18.png" alt=" send" />
+          </button>
+        </form>
+      </div>
+    </div>
+    <main>
+      <article class="model">
+        <div class="model-container">
+          <section class="model-sells">
+            <h2>Un modelo de Ventas Digitales 100% a éxito</h2>
+            <p>
+              Creemos tanto en nuestra forma de trabajar que nuestra
+              remuneración es <b>100% variable</b> poniendo a tu disposición un
+              proceso de adquisición completo:
+              <b>desde la captación hasta el cierre de la venta.</b>
+            </p>
+          </section>
+          <section class="model-advantage">
+            <h2>Algunas ventajas:</h2>
+            <div>
+              <img src="../img/Check.png" alt="check" />
+              <p>Un único proveedor, todos los servicios.</p>
+            </div>
+            <div>
+              <img src="../img/Check.png" alt="check" />
+              <p>
+                Posibilidad de convivencia con tus actuales estrategias de
+                tráfico y adquisición.
+              </p>
+            </div>
+            <div>
+              <img src="../img/Check.png" alt="check" />
+              <p>Paga solamente por los objetivos conseguidos.</p>
+            </div>
+          </section>
+          <section class="model-all-advantages">
+            <div class="advantage-see">
+              <p>Ver todas las ventajas</p>
+              <img src="../img/angle arrow right.png" alt="arrow right" />
+            </div>
+            <div class="advantage-talk">
+              <p>¿Hablamos?</p>
+              <img src="../img/angle arrow right.png" alt="arrow right" />
+            </div>
+          </section>
+        </div>
+      </article>
+      <article class="necessary">
+        <div class="necessary-intro">
+          <h2>Integramos todo lo necesario</h2>
+          <p>
+            Nuestra experiencia creando e integrando campañas, tecnología y
+            activos digitales hace que seamos capaces de
+            <b>ofrecerte una estrategia óptima de captación end to end.</b>
+          </p>
+        </div>
+
+        <div class="necessary-items">
+          <div class="cards">
+            <div class="card">
+              <div>
+                <div class="box">
+                  <img src="../img/iconos_def.png" alt="strategic definition" />
+                </div>
+                <h3>Definición estratégica</h3>
+              </div>
+              <p>
+                Establecemos de forma conjunta objetivos, necesidades y
+                procesos.
+              </p>
+              <div class="detail">
+                <p>Ver en detalle</p>
+                <img src="../img/Vector (6).png" alt="open details" />
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="box">
+                  <img src="../img/icon_channel.png" alt="digital channels" />
+                </div>
+                <h3>Canales digitales</h3>
+              </div>
+              <p>
+                Sin intermediarios. Invertimos, gestionamos y activamos las
+                campañas.
+              </p>
+              <div class="detail">
+                <p>Ver en detalle</p>
+                <img src="../img/Vector (6).png" alt="open details" />
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="box">
+                  <img src="../img/icon_create.png" alt="creativity" />
+                </div>
+                <h3>Creatividad</h3>
+              </div>
+              <p>Creamos conceptos y mensajes orientados a conversión.</p>
+              <div class="detail">
+                <p>Ver en detalle</p>
+                <img src="../img/Vector (6).png" alt="open details" />
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="box">
+                  <img src="../img/Icon_active.png" alt="convertion active" />
+                </div>
+                <h3>Activos de conversión</h3>
+              </div>
+              <p>
+                Diseñamos y desarrollamos los activos digitales necesarios para
+                pasar del clic al lead/venta.
+              </p>
+              <div class="detail">
+                <p>Ver en detalle</p>
+                <img src="../img/Vector (6).png" alt="open details" />
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="box">
+                  <img src="../img/icon_tec.png" alt="management technology" />
+                </div>
+                <h3>Tecnología lead management</h3>
+              </div>
+              <p>
+                Gestión completa del lead y trazabilidad del mismo hasta el
+                cierre de la venta con una tecnología única.
+              </p>
+              <div class="detail">
+                <p>Ver en detalle</p>
+                <img src="../img/Vector (6).png" alt="open details" />
+              </div>
+            </div>
+          </div>
+
+          <div class="discover mobile-xl">
+            <p>Descubre más</p>
+            <img src="../img/Arrow.png" alt="link to discover more" />
+          </div>
+        </div>
+      </article>
+      <article class="intelligent-tech">
+        <div class="intelligent-tech-container">
+          <img
+            class="image-tech"
+            src="../img/ilustreacion_tecnologia_global_sales.png"
+            alt="global sales image"
+          />
+          <div class="intelligent-text">
+            <h2>Tecnología inteligente a tu servicio</h2>
+            <p>
+              Inteligencia artificial aplicada a la conversión y a la venta.
+              Somos los creadores de la tecnología más implementada y avanzada
+              en la gestión de leads y cierre de ventas.
+            </p>
+            <div class="discover">
+              <p>Conócela</p>
+              <img src="../img/Arrow.png" alt="link to discover more" />
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="start-easy">
+        <div class="start-easy-container">
+          <h2 class="start-header">Comenzar es sencillo y ágil:</h2>
+          <div class="start-easy-presentation">
+            <div class="box-continent">
+              <div class="box-container">
+                <div class="box">1</div>
+                <h3>Cuéntanos tu necesidad</h3>
+              </div>
+            </div>
+            <div class="scroll-container">
+              <div class="selected">
+                <div class="scroll"></div>
+              </div>
+              <div class="scroll"></div>
+              <div class="scroll"></div>
+              <div class="scroll"></div>
+              <div class="scroll"></div>
+            </div>
+          </div>
+          <p class="start-pharagraph">
+            <b>
+              Recuerda, nuestra facturación se va realizando a medida que vamos
+              logrando las ventas.</b
+            >
+            Si no vendemos, no cobramos.
+          </p>
+          <div class="explain-project">
+            <p>¿Nos cuentas tu proyecto?</p>
+            <img src="../img/Arrow.png" alt="link to discover more" />
+          </div>
+        </div>
+      </article>
+      <article class="work-with">
+        <div class="work-with-container">
+          <img
+            class="work-with-img"
+            src="../img/Hemos_Trabajado_Con.png"
+            alt=" image of people working"
+          />
+          <div class="work-with-content">
+            <h3>Confía en la experiencia</h3>
+            <p>
+              Detrás de Global Sales Partnership se encuentran
+              <b> HABITANT y Walmeric</b>, dos de las empresas más innovadoras
+              en Performance y Ventas Digitales.
+            </p>
+            <img class="iframe" src="../img/Frame.png" alt="" />
+            <div class="work-with-discover">
+              <p>Descubre quiénes somos</p>
+              <img src="../img/Arrow.png" alt="link to discover more" />
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="partners">
+        <div class="partners-container">
+          <div class="partners-text">
+            <h2>
+              Las marcas más destacadas confían en Global Sales Partnership
+            </h2>
+            <p>
+              <b>Llevamos años ayudando a grandes empresas</b> a maximizar su
+              impacto gracias a este modelo de Digital Marketing basado en
+              performance.
+            </p>
+            <div>
+              <img src="../img/Logos.png" alt="logos of companies" />
+            </div>
+            <div class="partners-scroll-container">
+              <div class="selected">
+                <div class="scroll"></div>
+              </div>
+              <div class="scroll"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="lets-talk">
+        <div class="lets-talk-container">
+          <div class="lets-talk-more">
+            <div>
+              <img src="../img/Group 1594.png" alt="letter to" />
+              <h2>¡Hablemos!</h2>
+              <p>
+                <b>¿Tienes un reto</b> en el que quieres que te acompañemos?
+              </p>
+            </div>
+            <button class="button-link">
+              Cuéntanos más <img src="../img/Layer 18.png" alt="" />
+            </button>
+          </div>
+          <div class="lets-talk-email">
+            <p>
+              O si prefieres, <u>envíanos un mail</u> y te contestaremos lo
+              antes posible:
+            </p>
+            <p><b>business@globalsalespartnership.com</b></p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="footer-container">
+
+        <img
+          class="desktop"
+          src="../img/Logos_desktop.png"
+          alt="logos of companies"
+        />
+
+        <nav>
+          <a href="#">Inicio</a>
+          <a href="#">Nuestro modelo</a>
+          <a href="#">¿Cómo lo hacemos?</a>
+          <a href="#">Herramientas tecnológicas</a>
+          <a href="#">Casos de éxito</a>
+          <a href="#">¿Quiénes somos?</a>
+        </nav>
+        <div class="footer-terms">
+          <img src="../img/logos_global.png" alt="" />
+          <div>
+            <a href="#">Términos y privacidad</a>
+            <a href="#">Política de cookies</a>
+          </div>
+        </div>
+        <div class="footer-signature">
+          <p>GSP® | Cristóbal Bordiú, 13, Madrid</p>
+          <p>
+            <b>ENG</b>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

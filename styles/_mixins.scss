@@ -1,0 +1,19 @@
+@mixin center-desktop-xl {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+@mixin lets-talk-background {
+  background: url("../img/shutterstock_524965909\ 1.png");
+  background-color: $background-secondary;
+  background-position: center;
+  background-size: cover;
+}
+@mixin width-100vw {
+  width: 100vw;
+  height: 501px;
+}
+@mixin width-100 {
+  width: 100%;
+  margin: 0;
+}
